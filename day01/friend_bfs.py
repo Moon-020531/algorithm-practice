@@ -3,7 +3,7 @@ def print_all_friends(g, start):
 
     qu = []        # 앞으로 처리해야 할 사람들을 저장하는 큐
 
-    done = []  # 이미 큐에 추가한 사람들을 기록하는 집합 (중복 방지)
+    done = set()  # 이미 큐에 추가한 사람들을 기록하는 집합 (중복 방지)
 
     qu.append(start)   # 자신을 큐에 넣고 시작
 
@@ -48,3 +48,5 @@ print()
 print("=== Jerry의 모든 친구 ===")
 
 print_all_friends(fr_info, 'Jerry')
+
+
